@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const db_name = "wall_of_ninjas_db";
+const db_name = "wall_of_people_db";
 
 //mongoose connection/config
-mongoose.connect(`mongodb+srv://root:root@mern.yukfl.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb://localhost/${db_name}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
